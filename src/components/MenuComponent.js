@@ -1,5 +1,6 @@
 import react, {Component} from 'react';
 import { Card, CardImg,CardText,CardImgOverlay, Media, CardTitle, CardBody } from 'reactstrap';
+import DishDetail from './DishdetailComponent';
 
 
 
@@ -26,13 +27,7 @@ class Menu extends Component{
     renderAnimal(animal){
         if(animal != null){
             return(
-                <Card>
-                    <CardImg width="100%" src={animal.image} alt={animal.name} />
-                    <CardBody>
-                        <CardTitle>{animal.name}</CardTitle>
-                        <CardText>{animal.description}</CardText>
-                    </CardBody>
-                </Card>
+               <DishDetail dish={animal}/>
             );
         } else {
             return(

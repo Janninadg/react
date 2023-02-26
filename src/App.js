@@ -3,7 +3,7 @@ import react, {Component} from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent';
 import './App.css';
-import { ANIMALS } from './shared/animals';
+import { DISHES } from './shared/animals';
 
 class App extends Component{
   
@@ -12,7 +12,7 @@ class App extends Component{
     super(props);
 
     this.state = {
-      animals: ANIMALS
+      animals: DISHES
     };
   }
 
