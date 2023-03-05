@@ -11,6 +11,7 @@ import { PROMOTIONS } from '../shared/promotions';
 import { LEADERS } from '../shared/leaders';
 import DishDetail from './DishdetailComponent';
 import { useParams } from 'react-router-dom';
+import About from './AboutComponent';
 
 class Main extends Component{
   
@@ -56,7 +57,7 @@ class Main extends Component{
                 <Route exact path='/contactus' element={<Contact />}></Route>
 
                 <Route path='/menu/:dishId' element={<DishWithId />} ></Route>
-
+                <Route exact path="/aboutus" element={<About leaders={this.state.leaders}/>}></Route>
                 <Route path="/" element={<Navigate replace to="/home" />}></Route>
         </Routes>
         <Footer />
